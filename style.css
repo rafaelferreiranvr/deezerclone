@@ -485,9 +485,14 @@ ul {
         width: 100%;
     }
 
+    #titulo1 {
+        margin-left: 0;
+    }
+
     #conteinertextorosa, #textorosa {
         width: 100%;
     }
+
 }
 
 

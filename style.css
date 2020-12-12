@@ -1,0 +1,1406 @@
+/* Geral */ 
+body {
+    margin: 0px;
+    font-family: Roboto, sans-serif;
+    color: #32323d;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    width: 12px;
+}
+   
+
+::-webkit-scrollbar-thumb { 
+    border-radius: 8px;
+    background: rgb(207, 207, 207);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(167, 167, 167); 
+}
+
+
+
+
+
+
+
+
+/* Barra superior */
+#navegacao {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#fileiracima {
+    text-align: center;
+    width: 100%;
+}
+
+#fileiracima #conteudo {
+    position: relative;
+    display: inline-block;
+    width: 85%;
+}
+
+#conteinerlogo {
+    height: 80px;
+    float: left;
+}
+
+#logo {
+    padding-top: 24.5px;
+    padding-bottom: 24.5px;
+}
+
+#painelesquerdo {
+    position: relative;
+    align-items: center;
+    float: right;
+}
+
+.linknav {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 25px;
+    float: left;
+    line-height: 80px;
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 4px;
+    border-color: white;
+}
+
+.linknav:hover {
+    border-color: #2d96c8;
+}
+
+.conteinerbotaonav {
+    margin-left: 15px;
+    float: left;
+    line-height: 77px;
+}
+
+#botaonav1, #botaonav2 {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 9px 24px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px; 
+    outline: 0;
+    cursor: pointer;
+}
+
+#botaonav1 {
+    color: #2d96c8;
+    border-color: #2d96c8;
+    transition: .2s;
+}
+
+#botaonav1:hover {
+    color: #03608a;
+    border-color: #03608a;
+}
+
+#botaonav2:hover {
+    background-color: #03608a;
+    border-color: #03608a;
+}
+
+#botaonav2 {
+    color: white;
+    background-color: #2d96c8;
+    border-color: #2d96c8;
+    transition: .2s;
+}
+
+#fileirabaixo {
+    width: 100%;
+    text-align: center;
+}
+
+#parcerias {
+    position: relative;
+    font-weight: bold;
+    display: inline-block;
+    text-align: start;
+    max-width: 492px;
+}
+
+#parceiros {
+    display: inline-block;
+    height: 50px;
+}
+
+.conteinerparceiro {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#conteinerativar {
+    display: inline-block;
+    position: relative;
+    width: 260px;
+    height: 20px;
+}
+
+#ativar {
+    position: absolute;
+    display: inline-block;
+    height: 30px;
+}
+
+#menumobile {
+    display: none;
+}
+
+.moblink {
+    display: none;
+}
+
+@media screen and (max-width: 1160px) {
+    #fileiracima #conteudo {
+        width: 93%;
+    }
+
+    .linknav {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #painelesquerdo {
+        display: none;
+    }
+
+    #fileiracima #conteudo {
+        text-align: center;
+    }
+
+    #conteinerlogo {
+        float: none;
+        display: inline-block;
+    }
+
+    #logo {
+        width: 107px;
+    }
+    
+    #conteinerativar {
+        display: block;
+        width: 237px;
+        font-size: 16px;
+    }
+
+    #parceiros {
+        width: 237px;
+        text-align: center;
+    }
+
+    #menumobileicone {
+        position: relative;
+        width: 25px;
+        height: 40px;
+        float: right;
+        margin-top: 18px;
+        margin-left: -20px;
+        cursor: pointer;
+    }
+
+    .barrinha {
+        background-color: #000;
+        display: block;
+        width: 25px;
+        height: 3px;
+        position: absolute;
+        transition: .3s;
+    }
+
+    #barra2 {
+        top: 10px;
+    }
+
+    #barra3 {
+        top: 20px;
+    }
+
+    #menumobile {
+        text-align: center;
+        font-size: 20px;
+        font-family: Roboto, sans-serif;
+        font-weight: bold;
+        height: 1000vh;
+    }
+
+    .moblink {
+        display: inherit;
+        padding: 15px 0;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+/* Meio */
+#meio {
+    margin-top: 140px;
+}
+@font-face {
+    font-family: "Deezer-bold";
+    src: url(fonts/Deezer-bold.woff2);
+}
+@font-face {
+    font-family: "Deezer-regular";
+    src: url(fonts/Deezer-regular.woff2);
+}
+@media screen and (min-width: 1560px) {
+    #meio {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+/* Banner */
+#banner {
+    width: 100%;
+    height: 500px;
+    background-image: url(imagens/banner.png);
+    background-repeat: no-repeat;
+    background-position: 110% -60px;
+    font-family: "Deezer-bold";
+    
+}
+#areatexto {
+    margin: 0 124px;
+}
+#conteinertitulo1 {
+    display: inline-block;
+    width: 420px;
+    margin-top: 20px;
+    letter-spacing: .25px;
+}
+#titulo1 {
+    font-size: 48px;
+    margin: 0;
+}
+#conteinertextorosa {
+    color:#ef5466;
+    width: 420px;
+    margin-top: 10px;
+}
+#textorosa {
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+#conteinerbotoes {
+    margin-left: -16px;
+    display: inline-block;
+    font-weight: 900;
+}
+
+.botao1 {
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 17px;
+    border-style: solid;
+    border-radius: 30px;
+    font-family: Roboto, sans-serif;
+    font-weight: 550;
+    outline: none;
+}
+
+#conteinerpremium {
+    display: inline-block;
+    text-align: center;
+    width: 260px;
+}
+
+#premium {
+    padding: 18px 48px;
+    color: white;
+    background-color: #ef5466;
+    transition: .2s;
+}
+
+#premium:hover {
+    padding: 18px 60px;
+    border-radius: 40px;
+}
+
+#free {
+    margin-left: 10px;
+    padding: 16px 62px;
+    border-width: 2px;
+}
+
+@media screen and (min-width: 1560px) {
+
+    #banner {
+        text-align: center;
+        height: 370px;
+        background-position: 92% -60px;
+    }
+
+    #areatexto {
+        width: 1110px;
+        text-align: start;
+        display: inline-block;
+    }
+
+    #pausa1 {
+        display: none;
+    }
+
+    #conteinertitulo1, #conteinertextorosa {
+        width: 570px;
+    }
+    
+}
+
+@media screen and (max-width: 1160px) {
+
+    #banner {
+        background-position: 110% 345px;
+        padding-bottom: 135px;
+    }
+    
+    #areatexto {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        background-color: white;
+        padding-bottom: 40px;
+    }
+
+    #titulo1 {
+        font-size: 38px;
+        width: 390px;
+        margin-left: 15px;
+    }
+
+    #pausa1 {
+        display: none;
+    }
+
+    #conteinertextorosa {
+        text-align: center;
+        width: auto;
+        
+    }
+
+    #textorosa {
+        font-size: 24px;
+        width: 420px;
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #banner {
+        background-position: 5% 365px;
+        background-size: 480px;
+        padding-bottom: 135px;
+        height: 475px;
+    }
+
+    #areatexto {
+        text-align: center;
+    }
+    #titulo1 {
+        font-size: 34px;
+        width: 420px;
+    }
+
+    #conteinerbotoes {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    #conteinerpremium {
+        width: 100%;
+    }
+
+    #premium {
+        padding: 15px 48px;
+    }
+    #premium:hover {
+        padding: 15px 60px;
+        border-radius: 0px;
+    }
+
+    .botao1 {
+        display: inline-block;
+        width: calc(100% - 125px);
+    }
+
+    #free {
+        margin-left: 0;
+        padding: 15px 48px;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    #conteinertitulo1, #titulo1 {
+        width: 100%;
+    }
+
+    #conteinertextorosa, #textorosa {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* Porquê Deezer? */
+#porquedeezer {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 200px;
+    background-image: url(imagens/phone.jpg);
+    background-repeat: no-repeat;
+    background-position: 120px 95px;
+    max-width: 1325px;
+}
+
+#porquedeezer #conteudo {
+    display: block;
+    width: 580px;
+    float: right;
+    margin-right: 120px;
+    margin-top: 65px;
+    font-size: 16px;
+    text-align: start;
+}
+
+#porque {
+    font-size: 42px;
+    font-family: "Deezer-bold";
+    margin-bottom: 48px;
+}
+
+#frames div {
+    width: 260px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+#frames div h2 {
+    margin-bottom: 22px;
+    font-family: "Deezer-bold";
+}
+
+.framer {
+    float: right;
+}
+
+.framel {
+    float: left;
+}
+
+
+
+@media screen and (min-width: 1560px) {
+    #porquedeezer {
+        padding-bottom: 250px;
+    }
+
+    #porquedeezer #conteudo {
+        width: 730px;
+        margin-right: 100px;
+        margin-top: 70px;
+        line-height: 22px;
+    }
+
+    #frames div {
+        width: 332px;
+        margin-bottom: 20px;
+    }
+
+    #frames div h2 {
+        line-height: 30px;
+    }
+
+    .framel {
+        float: none;
+    }
+
+}
+
+
+@media screen and (max-width: 1160px) {
+
+    #porquedeezer {
+        background-image: none;
+        padding-bottom: 100px;
+    }
+    
+    #porquedeezer #conteudo {
+        width: auto;
+        float: none;
+        text-align: center;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    #porque {
+        display: inline-block;
+        margin-bottom: 30px
+    }
+
+    #frames div {
+        width: 42%;
+        text-align: start;
+    }
+
+    .framel, .framer {
+        float: none;
+    }
+
+    .framel {
+        margin-right: 100px;
+    }
+
+    #frames {
+        width: 92%;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #porque {
+        font-size: 30px;
+    }  
+
+    #frames div {
+        display: block;
+        width: 100%;
+    }
+
+    #porquedeezer {
+        background-image: none;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Sempre consigo */ 
+#sempreconsigo {
+    background-color: rgb(239, 84, 102);
+    color: white;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#sempreconsigo h1 {
+    display: inline-block;
+    font-family: "Deezer-bold";
+    font-size: 42px;
+}
+
+#sempreconsigo #conteudo {
+    padding-top: 20px;
+    padding-bottom: 70px;
+    display: inline-block;
+}
+
+#sempreconsigo #texto {
+    text-align: start;
+    float: right;
+    margin-left: 20px;
+}
+
+#sempreconsigo #paragrafo {
+    font-size: 20px;
+    width: 600px;
+    line-height: 26px;
+}
+
+#plataformas {
+    display: inline-block;
+    height: 45px;
+    width: 525px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: -20px;
+}
+
+.plat {
+    display: inline-block;
+    margin-right: 12px;
+}
+.plat img {
+    height: 45px;
+    float: left;
+}
+#car {
+    margin-right: 0;
+}
+
+
+@media screen and (max-width: 1235px) {
+
+    #sempreconsigo #conteudo {
+        width: 80%;
+    }
+
+    #sempreconsigo #paragrafo {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    #sempreconsigo #texto {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    #sempreconsigo #conteudo {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    #sempreconsigo #texto {
+        display: inline-block;
+        text-align: center;
+        float: none;
+    }
+
+    #sempreconsigo #paragrafo {
+        display: inline-block;
+        width: 950px;
+        margin-left: 0;
+    }
+
+    #sempreconsigo #plataformas {
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    #sempreconsigo #paragrafo {
+        width: 710px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #sempreconsigo #conteudo {
+        width: 100%;
+    }
+
+    #sempreconsigo #paragrafo {
+        font-size: 16px;
+        width: 712px;
+    }
+
+    #sempreconsigo h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 742px) {
+    #sempreconsigo #paragrafo {
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #sempreconsigo #paragrafo {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+/* Planos */ 
+#planos {
+    text-align: center;
+}
+
+#planos #conteudo {
+    display: inline-block;
+}
+
+#cabecalho {
+    text-align: center;
+}
+
+#cabecalho h1 {
+    margin-top: 50px;
+    font-size: 45px;
+    font-family: "Deezer-bold";
+}
+
+#recomendado {
+    font-size: 13px;
+    color: rgb(142, 142, 148);
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+#seta {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px;
+    border-top-color: rgb(45, 150, 200);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.sim, .nao, .sim1, .nao1 {
+    margin-right: 10px;
+    margin-bottom: 2px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.sim {
+    background-image: url(icons/sim.svg);
+}
+.nao {
+    background-image: url(icons/nao.svg);
+    opacity: .5;
+}
+.sim1 {
+    background-image: url(icons/sim1.svg);
+}
+.nao1 {
+    background-image: url(icons/nao1.svg);
+    opacity: .5;
+}
+
+.plano {
+    float: left;
+    text-align: center;
+    width: 180px;
+    padding: 40px;
+    padding-top: 10px;
+    margin-top: 82px;
+}
+
+.tituloplano {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.preco {
+    font-size: 36px;
+    font-family: "Deezer-bold";
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.vantagens {
+    display: inline-block;
+    height: 230px;
+    text-align: start;
+    margin-left: -40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.item, .itemcinza {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 17px;
+    width: 154px;
+}
+
+.item {
+    color: rgb(160, 160, 160);
+}
+
+#pacpremium .item {
+    color: white;
+}
+
+.itemcinza {
+    font-weight: normal;
+    opacity: .3;
+}
+
+.vantagens li {
+    white-space: nowrap;
+    width: 154px;
+    height: 34px;
+}
+
+
+#precos ul li {
+    display: inline-block;
+
+}
+
+#pacfree {
+    box-shadow: 8px 8px 5px rgba(0,0,0,.11);
+    margin-right: 5px;
+    padding-bottom: 50px;
+}
+
+#pacfree h2 {
+    width: 166px;
+}
+
+#conteinerpacpremium {
+    float: left;
+}
+
+#pacpremium {
+    display: inline-block;
+    background-color: #2d96c8;
+    color: white;
+    text-align: center;
+    width: 180px;
+    padding: 40px;
+    padding-bottom: 50px; 
+    padding-top: 10px;
+    box-shadow: 6px 8px 5px rgba(0,0,0,.11);
+}
+
+#pacfamily {
+    box-shadow: 0px 8px 5px rgba(0,0,0,.11);
+    margin-left: 5px;
+    padding-bottom: 50px;
+}
+
+#assinar1 {
+    display: inline-block;
+}
+
+#inscreverse, .experimente {
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    padding: 16px 30px;
+    color: white;
+    border: solid;
+    border-radius: 40px;
+    width: 180px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+#inscreverse {
+    background-color: rgb(142, 142, 148);
+    border-color: rgb(142, 142, 148);
+    margin-top: 60px;
+}
+
+.experimente {
+    background-color: rgb(239, 84, 102);
+    border-color:  rgb(239, 84, 102);
+    margin-top: 20px;
+}
+
+.linkplano, .linkplano1 {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.linkplano {
+    color: #2d96c8;
+}
+
+.linkplano1 {
+    color: white;
+}
+
+#disclaimer {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(144, 144, 157);
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+#disclaimer #conteudo {
+    display: inline-block;
+    width: 980px;
+}
+
+.botaopacote {
+    float: right;
+    margin-top: 45px;
+    padding: 11px 60px;
+    border-style: solid;
+    border-radius: 35px;
+    border-color:rgb(50, 50, 61);
+    color: rgb(50, 50, 61);
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+#pacotes {
+    text-align: center;
+}
+
+#pacotes #conteudo {
+    width: 1050px;
+    text-align: start;
+    display: inline-block;
+}
+
+.pacote {
+    display: inline-block;
+    text-align: start;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.pacote .conteudo h1 {
+    font-family: "Deezer-bold";
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+.pacote h2 {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.pacote .conteudo {
+    display: inline-block;
+}
+
+@media screen and (max-width: 1160px) {
+    #disclaimer #conteudo {
+        width: 680px;
+    }
+    
+    .pacote, .botaopacote, .pacote h1, .pacote h2{
+        text-align: center;
+        float: none;
+    }
+
+    #pacotes #conteudo {
+        text-align: center;
+        width: 768px;
+    }
+
+    .pacote .conteudo {
+        display: block;
+    }
+
+    .pacote h1, .pacote h2 {
+        display: block;
+    }
+
+    .pacote {
+        width: 768px;
+        margin-bottom: 40px;
+    }
+
+    .botaopacote {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 802px) {
+    #planos #conteudo {
+        width: 525px;
+        text-align: center;
+    }
+
+    #pacfamily {
+        display: inline-block;
+        float: none;
+    }
+
+    #disclaimer #conteudo {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #planos #conteudo {
+        width: 260px;
+    }
+
+    #pacotes #conteudo {
+        width: 100%;
+    }
+    .pacote {
+        width: 100%;
+    }
+
+    .pacote .conteudo {
+        margin-bottom: 20px;
+    }
+
+    .pacote h2 {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+/* Rodapé */
+#rodape {
+    background-color: rgb(50, 50, 61);
+    display: inline-block;
+    width: 100%;
+    color: rgb(204, 204, 204);
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#rodape #conteudo {
+    display: inline-block;
+    padding-top: 50px;
+    text-align: start;
+    width: 90%;
+    height: 320px;
+}
+
+#midia {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    padding-top: 120px;
+}
+
+#social {
+    display: inline-block;
+    margin-top: 35px;
+}
+
+#logo2 {
+    display: inline-block;
+}
+
+.titulofileira {
+    display: inherit;
+    color: #2692b7;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.titulofileiramobile {
+    color: #2692b7;
+    font-size: 15px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+#linksrodape {
+    width: 825.537px;
+    padding-top: 20px;
+    float: right;
+    text-align: end;
+}
+
+#linksrodape div ul{
+    color: rgb(204, 204, 204);
+    font-weight: bold;
+}
+
+.listamobile {
+    display: none;
+}
+
+.fileira {
+    text-align: start;
+    float: left;
+}
+
+.fileira ul {
+    padding: 0;
+}
+
+.fileira ul li {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+#fileira1 {
+    width: 186px;
+}
+
+#fileira2 {
+    width: 230px;
+}
+
+#fileira3 {
+    width: 140px;
+    padding-right: 20px;
+}
+
+#fileira4 {
+    width: 200px;
+}
+
+.redesocial {
+    float: left;
+    text-align: center;
+    padding: 7px;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-color: rgb(110, 110, 121);
+    border-radius: 50%;
+    transition: 0.15s;
+    fill: rgb(110, 110, 121);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.redesocial:hover {
+    background-color: rgb(110, 110, 121); 
+    fill: rgb(50, 50, 61);
+}
+
+.redesocial svg {
+    width: 20px;
+    height: 20px;
+}
+
+#conteinercopyright {
+    display: inline-block;
+    width: 100%;
+}
+
+#copyright {
+    float: right;
+    text-align: center;
+    width: 123px;
+    padding-right: 50px;
+}
+
+#detentor {
+    display: inline-block;
+    font-size: 12px;
+    color: rgb(82, 82, 93);
+}
+
+#idioma {
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    color: rgb(204, 204, 204);
+    margin-bottom: 20px;
+    width: 120px;
+}
+
+.pausamobile, #pausamobiletopo {
+    display: none;
+}
+
+.togglerodape {
+    display: none;
+}
+
+#legaldesktop {
+    display: inherit;
+}
+
+#legalmobile {
+    display: none;
+}
+
+@media screen and (max-width: 1324px) {
+    #linksrodape {
+        width: 70%;
+    }
+
+    #fileira1 {
+        width: 22.5%;
+        padding-right: 0%;
+    }
+    
+    #fileira2 {
+        width: 22.8%;
+        padding-right: 3%;
+    }
+    
+    #fileira3 {
+        width: 14.85%;
+        margin-right: 5%;
+    }
+    
+    #fileira4 {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    #midia {
+        padding-top: 25px;
+        padding-right: 0;
+    }
+
+    #rodape #conteudo {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    #midia {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    #logo2 {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .redesocial {
+        margin-right: 20px;
+    }
+
+    #social {
+        margin-bottom: 50px;
+    }
+
+    .pausamobile, #pausamobiletopo {
+        display: inherit;
+        width: 100%;
+        height: 0px;
+        border: solid;
+        border-width: .8px;
+        border-color: #505059;
+        color: #505059;
+        margin: 0;
+    }
+
+    #linksrodape {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .titulofileira {
+        display: none;
+    }
+
+    .titulofileiramobile {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .togglerodape {
+        display: inherit;
+        float: right;
+        color: rgb(101,101,109);
+        font-size: 30px;
+        font-family: Roboto, sans-serif;
+        cursor: pointer;
+    }
+
+    .fileira, #fileira1 ,#fileira2 ,#fileira3, #fileira4  {
+        display: block;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .listadesktop {
+        display: none;
+    }
+
+    .listamobile {
+        display: inherit;
+    }
+
+    #legalmobile {
+        display: inherit;
+    }
+
+    #legaldesktop {
+        display: none;
+    }
+
+    #conteinercopyright {
+        text-align: center;
+    }
+
+    #copyright {
+        display: inline-block;
+        float: none;
+        width: 210px;
+        padding-right: 0;
+    }
+    
+    #detentor {
+        padding-top: 10px;
+        float: left;
+    }
+}

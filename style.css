@@ -54,7 +54,7 @@ ul {
     width: 100%;
 }
 
-#fileiracima #conteudo {
+#fileiracima .conteudo {
     position: relative;
     display: inline-block;
     width: 85%;
@@ -179,7 +179,7 @@ ul {
 }
 
 @media screen and (max-width: 1160px) {
-    #fileiracima #conteudo {
+    #fileiracima .conteudo {
         width: 93%;
     }
 
@@ -194,7 +194,7 @@ ul {
         display: none;
     }
 
-    #fileiracima #conteudo {
+    #fileiracima .conteudo {
         text-align: center;
     }
 
@@ -512,7 +512,7 @@ ul {
     max-width: 1325px;
 }
 
-#porquedeezer #conteudo {
+#porquedeezer .conteudo {
     display: block;
     width: 580px;
     float: right;
@@ -554,7 +554,7 @@ ul {
         padding-bottom: 250px;
     }
 
-    #porquedeezer #conteudo {
+    #porquedeezer .conteudo {
         width: 730px;
         margin-right: 100px;
         margin-top: 70px;
@@ -584,7 +584,7 @@ ul {
         padding-bottom: 100px;
     }
     
-    #porquedeezer #conteudo {
+    #porquedeezer .conteudo {
         width: auto;
         float: none;
         text-align: center;
@@ -656,7 +656,7 @@ ul {
     font-size: 42px;
 }
 
-#sempreconsigo #conteudo {
+#sempreconsigo .conteudo {
     padding-top: 20px;
     padding-bottom: 70px;
     display: inline-block;
@@ -698,7 +698,7 @@ ul {
 
 @media screen and (max-width: 1235px) {
 
-    #sempreconsigo #conteudo {
+    #sempreconsigo .conteudo {
         width: 80%;
     }
 
@@ -713,7 +713,7 @@ ul {
         margin-left: 0px;
     }
 
-    #sempreconsigo #conteudo {
+    #sempreconsigo .conteudo {
         width: 100%;
         padding-bottom: 50px;
     }
@@ -744,7 +744,7 @@ ul {
 
 
 @media screen and (max-width: 768px) {
-    #sempreconsigo #conteudo {
+    #sempreconsigo .conteudo {
         width: 100%;
     }
 
@@ -782,7 +782,7 @@ ul {
     text-align: center;
 }
 
-#planos #conteudo {
+#planos .conteudo {
     display: inline-block;
 }
 
@@ -988,7 +988,7 @@ ul {
     margin-top: 100px;
 }
 
-#disclaimer #conteudo {
+#disclaimer .conteudo {
     display: inline-block;
     width: 980px;
 }
@@ -1009,7 +1009,7 @@ ul {
     text-align: center;
 }
 
-#pacotes #conteudo {
+#pacotes .conteudo {
     width: 1050px;
     text-align: start;
     display: inline-block;
@@ -1039,7 +1039,7 @@ ul {
 }
 
 @media screen and (max-width: 1160px) {
-    #disclaimer #conteudo {
+    #disclaimer .conteudo {
         width: 680px;
     }
     
@@ -1048,7 +1048,7 @@ ul {
         float: none;
     }
 
-    #pacotes #conteudo {
+    #pacotes .conteudo {
         text-align: center;
         width: 768px;
     }
@@ -1072,7 +1072,7 @@ ul {
 }
 
 @media screen and (max-width: 802px) {
-    #planos #conteudo {
+    #planos .conteudo {
         width: 525px;
         text-align: center;
     }
@@ -1082,17 +1082,17 @@ ul {
         float: none;
     }
 
-    #disclaimer #conteudo {
+    #disclaimer .conteudo {
         width: 90%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #planos #conteudo {
+    #planos .conteudo {
         width: 260px;
     }
 
-    #pacotes #conteudo {
+    #pacotes .conteudo {
         width: 100%;
     }
     .pacote {
@@ -1125,7 +1125,7 @@ ul {
     text-align: center;
 }
 
-#rodape #conteudo {
+#rodape .conteudo {
     display: inline-block;
     padding-top: 50px;
     text-align: start;
@@ -1309,7 +1309,7 @@ ul {
         padding-right: 0;
     }
 
-    #rodape #conteudo {
+    #rodape .conteudo {
         width: 95%;
     }
 }

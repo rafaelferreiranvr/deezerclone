@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <title>Deezer | Ouça música | Plataforma de streaming musical online</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon" href="icons/aba.png">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+    <script>
+
+    </script>
   </head>
 
 
@@ -400,58 +405,47 @@
   <script>
     function toggle(isOn) {
       if (isOn == false) {
-        document.getElementById("menumobileicone").onclick = function(){toggle(true)}; 
-        document.getElementById("menumobile").style.cssText = "display: inherit";
-        document.getElementById("barra1").style.cssText = "top: 8px; transform: rotate(45deg)";
-        document.getElementById("barra2").style.display = "none";
-        document.getElementById("barra3").style.cssText = "top: 8px; transform: rotate(-45deg)";
-        
+        $("#menumobileicone").attr("onclick", "toggle(true)");
+        $("#menumobile").css("display", "inherit");
+        $("#barra1").css({"top": "8px", "transform": "rotate(45deg)"});
+        $("#barra2").css("display", "none");
+        $("#barra3").css({"top": "8px", "transform": "rotate(-45deg)"});
       }
+
      else if (isOn == true) {
-        document.getElementById("menumobileicone").onclick = function(){toggle(false)};
-        document.getElementById("menumobile").style.cssText = "display: none";
-        document.getElementById("barra1").style.cssText = "top: 0; transform: rotate(0)";
-        document.getElementById("barra2").style.display = "inherit";
-        document.getElementById("barra3").style.cssText = "top: 20px; transform: rotate(0)";
+        $("#menumobileicone").attr("onclick", "toggle(false)");
+        $("#menumobile").css("display", "none");
+        $("#barra1").css({"top": "0", "transform": "rotate(0)"});
+        $("#barra2").css("display", "inherit");
+        $("#barra3").css({"top": "20px", "transform": "rotate(0)"});
         }
     }
 
 
     function togglerodape(isOn, n) {
       if (isOn == true) {
-        document.getElementById(`togglerodape${n}`).onclick = function(){togglerodape(false, `${n}`)};
-        document.getElementById(`togglerodape${n}`).innerHTML = "+";
-        document.getElementById(`titulofileiramobile${n}`).style.cssText = "margin-top: 20px; margin-bottom: 0px;"
-        document.getElementById(`fileira${n}`).style.cssText = "padding-bottom: 10px;"
-
-        var x = document.getElementsByClassName(`itemfileira${n}`);
-        var i;
-        for (i=0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
+        $(`#togglerodape${n}`).attr("onclick", `togglerodape(false, ${n})`);
+        $(`#togglerodape${n}`).text("+");
+        $(`#titulofileiramobile${n}`).css({"margin-top": "20px", "margin-bottom": "0px"});
+        $(`#fileira${n}`).css("padding-bottom", "10px");
+        $(`.itemfileira${n}`).css("display", "none");
 
         if (n == 4) {
-          document.getElementById("pausafundo").style.display = "none"
+          $("#pausafundo").css("display", "none");
         }
       }
 
       else if (isOn == false) {
-        document.getElementById(`togglerodape${n}`).onclick = function(){togglerodape(true, `${n}`)};
-        document.getElementById(`togglerodape${n}`).innerHTML = "-";
-        document.getElementById(`titulofileiramobile${n}`).style.cssText = "margin-top: 20px; margin-bottom: 30px;"
-        document.getElementById(`fileira${n}`).style.cssText = "padding-bottom: 20px;"
-        
-        var x = document.getElementsByClassName(`itemfileira${n}`);
-        var i;
-        for (i=0; i < x.length; i++) {
-          x[i].style.display = "inherit";
-        }
+        $(`#togglerodape${n}`).attr("onclick", `togglerodape(true, ${n})`);
+        $(`#togglerodape${n}`).text("-");
+        $(`#titulofileiramobile${n}`).css({"margin-top": "20px", "margin-bottom": "30px"});
+        $(`#fileira${n}`).css("padding-bottom", "20px");
+        $(`.itemfileira${n}`).css("display", "inherit");
 
         if (n == 4) {
-          document.getElementById("pausafundo").style.display = "inherit"
+          $("#pausafundo").css("display", "inherit");
         }
       }
     }
-
     </script>
 </html>
